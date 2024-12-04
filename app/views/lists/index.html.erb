@@ -9,6 +9,7 @@
   </thead>
   <% @lists.each do |list| %>
     <tbody>
+      <td><%= image_tag list.image, size: "200x200" %></td>
       <td><%= link_to list.title, "lists/#{list.id}" %></td>
       <td><%= list.body %></td>
     </tbody>
